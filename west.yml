@@ -44,6 +44,7 @@ manifest:
   projects:
 
     - name: zephyr
+      remote: quectel
       repo-path: nxp-zephyr
       revision: 6124bc2780c46c0a0c6783c29298edbfaa9c160b
       import:
