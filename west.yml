@@ -29,6 +29,8 @@ manifest:
       url-base: https://github.com/nxp-zephyr
     - name: zephyrproject
       url-base: https://github.com/zephyrproject-rtos
+    - name: quectel
+      url-base: https://github.com/Quectel-ShortRange
 
   # If not otherwise specified, the projects below should be obtained
   # from the zsdk remote.
@@ -43,7 +45,7 @@ manifest:
 
     - name: zephyr
       repo-path: nxp-zephyr
-      revision: aa70d2e37bf408a2b7ffed1c66b21e8ba1c02555
+      revision: 6124bc2780c46c0a0c6783c29298edbfaa9c160b
       import:
         #
         # ZSDK imports the contents of nxp-zephyr/west.yml at the above
@@ -124,9 +126,9 @@ manifest:
       groups:
         - crypto
     - name: trusted-firmware-m
-      remote: nxp
+      remote: quectel
       repo-path: nxp_tf-m
-      revision: 9a6c6f95877ad0b2cf8b8a7031399d29dfabd686
+      revision: a164817e01f4aad9ad84f476af05a731efa12d01
       path: modules/tee/tf-m/trusted-firmware-m
       groups:
         - tee
