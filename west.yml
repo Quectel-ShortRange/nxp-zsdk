@@ -167,6 +167,11 @@ manifest:
       path: modules/lib/nxp_iot_agent
 
     # Add any additional third-party repositories.
+    - name: jlink_patch
+      remote: quectel
+      repo-path: jlink_patch
+      revision: aed8d43bd7b1cf56620f46051b5f00bd8372eeb7
+      path: quectel/tools/jlink_patch
 
   self:
     path: zsdk
