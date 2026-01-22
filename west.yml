@@ -46,7 +46,7 @@ manifest:
     - name: zephyr
       remote: quectel
       repo-path: nxp-zephyr
-      revision: 948f824b20e4c8c1a2993b100d65ea4f4a201638
+      revision: 349696929e12e2b0081861a407730e7fb58a09d9
       import:
         #
         # ZSDK imports the contents of nxp-zephyr/west.yml at the above
@@ -129,7 +129,7 @@ manifest:
     - name: trusted-firmware-m
       remote: quectel
       repo-path: nxp_tf-m
-      revision: a164817e01f4aad9ad84f476af05a731efa12d01
+      revision: edecb32264646bf4f2e65c63ab305dbbb3177479
       path: modules/tee/tf-m/trusted-firmware-m
       groups:
         - tee
