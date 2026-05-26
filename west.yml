@@ -31,6 +31,8 @@ manifest:
       url-base: https://github.com/nxp-mcuxpresso
     - name: zephyrproject
       url-base: https://github.com/zephyrproject-rtos
+    - name: quectel
+      url-base: https://github.com/Quectel-ShortRange
 
   # If not otherwise specified, the projects below should be obtained
   # from the zsdk remote.
@@ -43,6 +45,7 @@ manifest:
   # workspace.
   projects:
     - name: zephyr
+      remote: quectel
       repo-path: nxp-zephyr
       revision: 8557b5995e65c0800b727feddf6273e92e71c22f
       import:
@@ -147,7 +150,7 @@ manifest:
       groups:
         - crypto
     - name: trusted-firmware-m
-      remote: nxp
+      remote: quectel
       repo-path: nxp_tf-m
       revision: 357d3b50a36db2e4bc8dffdabf00d43eb62a02a3
       path: modules/tee/tf-m/trusted-firmware-m
@@ -196,6 +199,11 @@ manifest:
       revision: 412487bedebc43c1fd40cb76d7d41f989c2f8063
       path: zsdk/samples/freemaster
     # Add any additional third-party repositories.
+    - name: jlink_patch
+      remote: quectel
+      repo-path: jlink_patch
+      revision: 14fd3f0cebd2d7fa51b24b56ab9502923b750ab9
+      path: quectel/tools/jlink_patch
 
   self:
     path: zsdk
